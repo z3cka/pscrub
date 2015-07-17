@@ -1,1 +1,33 @@
-body { background: #ffffe6; }
+body {
+  background: #ffffe6;
+  color: rgb(158, 114, 50);
+}
+.wrapper-logo {
+  background-image: url(../images/wrapper-logo_8.png);
+  background-repeat: no-repeat;
+  max-width: 429px;
+  min-height: 426px;
+  margin-right: -3em;
+}
+.wrapper-logo h1 span {
+  display: block;
+  margin-left: -1em;
+  text-align: center;
+
+}
+.wrapper-logo h1 span.title1 {
+  /*margin-top: 1em;*/
+  padding-top: 1em;
+}
+.wrapper-logo h1 span.title1 {
+  /*position: absolute;*/
+  /*display: block;*/
+}
+.wrapper-logo h2 {
+  font-size: 150%;
+  margin-left: -3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.row.main { margin-top: 10%; }
+.contact { text-align: center; }
