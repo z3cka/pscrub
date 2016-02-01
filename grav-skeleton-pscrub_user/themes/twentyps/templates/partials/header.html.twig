@@ -2,7 +2,21 @@
   <h1 id="logo"><a href="{{ base_url_absolute }}">{{ site.logo.text1 }} <span>{{ site.logo.text2 }}</span></a></h1>
   <nav id="nav">
     <ul>
-      <li class="current"><a href="{{ base_url_absolute }}">Welcome</a></li>
+      {% for page in pages.children %}
+        {% if page.visible %}
+          {% set current_page = (page.active or page.activeChild) ? 'current' : '' %}
+          <li class="{{ current_page }}">
+            <a href="{{ page.url }}">
+              {{ page.menu }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+      {% for mitem in site.menu %}
+        <li>
+          <a href="{{ mitem.link }}">{{ mitem.text }}</a>
+        </li>
+      {% endfor %}
       {% for button in site.buttons %}
       <li><a href="{{ button.link }}" class="button special">{{ button.text }}</a></li>
       {% endfor %}

@@ -1,8 +1,10 @@
 ---
 title: Lavender
+body_classes: lavender
+visible: true
 ---
 
-![lavendar](Lavender_w300.png)
+![Lavendar](Lavender_w300.png)
 ## The tranquil aromatherapy soothes the mind and relaxes the spirit
 
 Stir with cinnamon stick to mix up oil, rub vigorously all over body, rinse and pat dry.
