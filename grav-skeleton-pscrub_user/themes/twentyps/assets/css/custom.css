@@ -1,0 +1,18 @@
+#main {
+  padding: 3em 0;
+}
+
+@media screen and (max-width: 1680px) {
+  header.special {
+    margin-bottom: 2em;
+    padding-top: 3.5em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  p img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
